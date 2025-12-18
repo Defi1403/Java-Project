@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="5CDB95" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homebudget.AddIncomeController">
+   <children>
+      <Text fill="#05386d" layoutX="420.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Новый доход" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="System Bold" size="80.0" />
+         </font>
+      </Text>
+      <Button fx:id="saveButton" alignment="CENTER" layoutX="510.0" layoutY="800.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: #05386D; -fx-background-radius: 20px;" text="Сохранить" textAlignment="CENTER" textFill="#edf5e1">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </Button>
+      <Text fill="#05386d" layoutX="485.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сумма">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="amountTextField" layoutX="470.0" layoutY="334.0" prefHeight="50.0" prefWidth="500.0" style="-fx-background-radius: 30; -fx-border-color: #05386d; -fx-border-radius: 300;" />
+      <Text fill="#05386d" layoutX="485.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#05386d" layoutX="484.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Категория">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="categoryComboBox" layoutX="470.0" layoutY="598.0" prefHeight="50.0" prefWidth="500.0" style="-fx-background-radius: 30; -fx-border-color: #05386d; -fx-border-radius: 30;" />
+      <ImageView fx:id="returnImage" fitHeight="100.0" fitWidth="100.0" layoutX="80.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/return-svgrepo-com.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="dateDatePicker" layoutX="470.0" layoutY="466.0" prefHeight="50.0" prefWidth="500.0" style="-fx-border-radius: 0; -fx-border-color: #05386d;">
+         <opaqueInsets>
+            <Insets top="30.0" />
+         </opaqueInsets>
+      </DatePicker>
+   </children>
+</AnchorPane>
